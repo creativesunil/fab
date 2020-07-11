@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .select2-selection__rendered {
+            line-height: 32px !important;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 38px !important;
+        }
+
+        .select2-selection__arrow {
+            height: 35px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidebar-wrapper">Sidebar</div>
+            </div>
+            <div class="col-md-10">
+                <form>
+				
+				<div class="card bg-light mb-4">
+				   <div class="card-body">
+				<div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="company"> Customer </label>
+                            <select class="form-control my-select2">
+							   <option> Select and begin typing  </option>
+							   <option> 1  </option>
+							</select>
+                        </div>
+                        <div class="form-group col-md-6">
+                           <div class="row">
+						    <div class="col-md-6">
+						       <label for="company"> Currency </label>
+                               <select class="form-control my-select2">
+							   <option> INR  </option>
+							   <option> 1  </option>
+							</select>
+							</div>
+							<div class="col-md-6">
+						       <label for="company"> Discount Type </label>
+                               <select class="form-control my-select2">
+							   <option> No Discount  </option>
+							</select>
+							</div>
+						   </div>
+                        </div>
+                    </div>
+					
+					 <div class="form-row">
+					 
+					  <div class="form-group col-md-6">
+					  <div><hr></div>
+					   <div> <span class="fa fa-edit"></span> </div>
+					  <div class="form-row">
+					      <div class="form-group col-md-6">
+					  <p> Bill To </p>
+					   <p> ........ <br> ........ <br> ........ <br>..........</p>
+					 </div>
+					 
+					 <div class="form-group col-md-6">
+					    <p> Ship To </p>
+					    <p> ........ <br> ........ <br> ........ <br>..........</p>
+					 </div>
+					  </div>
+					  
+					   <div class="row">
+						    <div class="col-md-6">
+						       <label for="company"> Credit Note Date </label>
+                               <input type="date" class="form-control" id="gst">
+							</div>
+							<div class="col-md-6">
+						       <label for="company"> Credit Note # </label>
+                               <input type="date" class="form-control" id="gst">
+							</div>
+						   </div>
+					  </div>
+					
+					 <div class="form-group col-md-6">
+					  <div class="form-row">
+					    <div class="form-group col-md-12">
+                            <label for="company"> Reference # </label>
+                            <input type="text" class="form-control" id="company">
+                        </div>
+					   </div>
+					    <div class="form-row">
+					    <div class="form-group col-md-12">
+                            <label for="company"> Admin Note </label>
+                             <textarea class="form-control" rows="4"></textarea>
+                        </div>
+					   </div>
+					 </div>
+					 
+					 </div>
+				
+				   
+				   </div>
+				</div>
+				
+				<div class="card bg-light mb-4">
+				   <div class="card-body">
+				   <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <select class="form-control my-select2">
+							   <option> Add Items </option>
+							   <option> 1  </option>
+							   <option> 2  </option>
+							   <option> 3  </option>
+							</select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <p class="text-right"> Show Quantity As : 
+							<label> <input type="radio" name="tqty"> Qty </label> 
+							<label> <input type="radio" name="tqty"> Hours </label>
+							<label> <input type="radio" name="tqty"> Qty/Hours </label>
+							</p>
+                        </div>
+                    </div>
+				      <table class="table">
+						<thead class="thead-dark">
+						  <tr>
+							<th> Items </th>
+							<th> Description </th>
+							<th style="width:130px;"> Qty </th>
+							<th style="width:130px;"> Rate </th>
+							<th> Tax </th>
+							<th style="width:130px;"> Amount </th>
+						    <th> <span class="fa fa-gear"></span> </th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td> <textarea class="form-control" rows="2"></textarea> </td>
+							<td> <textarea class="form-control" rows="2"></textarea></td>
+							<td> <input type="Number" class="form-control"> </td>
+							<td> <input type="text" class="form-control"> </td>
+							<td> <select class="form-control my-select2">
+							   <option> 9.00% 9.00% </option>
+							   <option> 1  </option>
+							   <option> 2  </option>
+							   <option> 3  </option>
+							</select> </td>
+							<td> <input type="Number" class="form-control"> </td>
+							<td> <input type="checkbox" name="amount"> </td>
+						  </tr>
+						  
+						  <tr>
+							<td colspan="4" style="text-align:right"> Discount </td>
+							<td> <input type="text" class="form-control" value="100"> </td>
+							<td style="text-align:center"> <i class="fa fa-inr"></i> 0.00 </td>
+						  </tr>
+						  
+						  <tr>
+							<td colspan="4" style="text-align:right"> Adjustent </td>
+							<td> <input type="text" class="form-control" value="100"> </td>
+							<td style="text-align:center"> <i class="fa fa-inr"></i> 0.00 </td>
+						  </tr>
+						  
+						  <tr>
+							<td colspan="5" style="text-align:right"> Total </td>
+							<td style="text-align:center"> <i class="fa fa-inr"></i> 0.00 </td>
+						  </tr>
+						  
+						</tbody>
+					  </table>
+				  </div>
+				 </div>
+				
+				<div class="card bg-light mb-4">
+				   <div class="card-body">
+				     <div class="form-row">
+					    <div class="form-group col-md-12">
+                            <label for="company"> Client Note </label>
+                             <textarea class="form-control" rows="2"></textarea>
+                        </div>
+					   </div>
+				   
+					  <div class="form-row">
+					    <div class="form-group col-md-12">
+                            <label for="company">  Terms & Conditions </label>
+                             <textarea class="form-control" rows="4"></textarea>
+                        </div>
+					   </div>
+					 
+					 </div>
+				   </div>
+				    <div class="form-group">
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary px-4"> Submit </button>
+							 <button type="submit" class="btn btn-danger px-4"> Cancel </button>
+                        </div>
+                    </div>
+				</div>
+				
+                      
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- markup for modal-box -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add New Customer Group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name-grp">Name</label>
+                        <input type="text" class="form-control" id="name-grp">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my-select2').select2();
+        });
+    </script>
+</body>
+
+</html>

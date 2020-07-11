@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.select2-selection__rendered {
+			line-height: 32px !important;
+		}
+
+		.select2-container .select2-selection--single {
+			height: 38px !important;
+		}
+
+		.select2-selection__arrow {
+			height: 35px !important;
+		}
+
+		.frm-header {
+			padding: 5px 15px;
+		}
+
+		.frm-header p {
+			font-size: 18px;
+			font-weight: 500;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row mt-4">
+			<div class="col-md-2">
+				<div class="sidebar-wrapper">Sidebar</div>
+			</div>
+			<div class="col-md-10">
+				<form>
+
+					<div class="card bg-light mb-4">
+						<div class="card-header bg-danger frm-header">
+							<p class="m-0 text-white"> Create Expense Report </p>
+						</div>
+						<div class="card-body">
+							<div class="form-row form-group">
+								<label class="col-md-12"> <b> Employee : </b> Dhiraj Sinha (20909092) </label>
+							</div>
+							<hr>
+							<div class="form-row form-group">
+								<label class="col-md-2 text-right pt-1" for="company"> Country / Region </label>
+								<div class="col-md-4">
+									<select class="form-control my-select2">
+										<option> Select Country / Region </option>
+										<option> India </option>
+									</select>
+								</div>
+								<label class="col-md-2 text-right pt-1" for="company"> License Plate </label>
+								<div class="col-md-4">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-row form-group">
+								<label class="col-md-2 text-right pt-1" for="company"> Vehicle Class </label>
+								<div class="col-md-4">
+									<select class="form-control my-select2">
+										<option> Select Country / Region </option>
+										<option> India </option>
+									</select>
+								</div>
+
+								<label class="col-md-2 text-right pt-1" for="company"> Vehicle Type </label>
+								<div class="col-md-4">
+									<select class="form-control my-select2">
+										<option> Select Country / Region </option>
+										<option> India </option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="form-row form-group">
+
+
+							</div>
+
+
+							<div class="form-row form-group">
+								<label class="col-md-2 text-right pt-1" for="company"> Comment </label>
+								<div class="col-md-10">
+									<textarea rows="3" class="form-control"></textarea>
+								</div>
+
+							</div>
+
+							<div class="form-row form-group">
+								<label class="col-md-2 text-right pt-1" for="company"> </label>
+								<div class="col-md-10">
+									<button class="btn btn-primary btn-sm"> Accept </button>
+									<button class="btn btn-primary btn-sm"> Accept and New Entry </button>
+									<button class="btn btn-primary btn-sm"> Change Cost Assignment </button>
+									<button class="btn btn-success btn-sm"> Copy </button>
+									<button class="btn btn-danger btn-sm"> Delete </button>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+			</div>
+
+
+
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.my-select2').select2();
+		});
+	</script>
+</body>
+
+</html>
